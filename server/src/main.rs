@@ -7,11 +7,12 @@ use std::net::SocketAddr;
 
 #[derive(Debug, Deserialize)]
 struct SubmitResult {
-    cpu: f64,
-    memory: f64,
-    gpu: f64,
-    browser: f64,
-    overall: f64,
+    benchmark_version: String,
+    cpu_score: f64,
+    memory_score: f64,
+    gpu_score: f64,
+    browser_score: f64,
+    overall_score: f64,
 }
 
 #[derive(Debug, Serialize)]
