@@ -1,11 +1,324 @@
+```html
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index | idk</title>
+
+    <title>BenchForge | Thunder</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <h1>Hey there</h1>
+    <!-- Main content -->
+    <main class="main-content">
+      <section class="benchforge-header">
+        <span class="project-tag">PROJECT</span>
+
+        <h1>BenchForge</h1>
+
+        <p>
+          A browser-based benchmarking platform designed to test your system's
+          CPU, memory, GPU and browser performance.
+        </p>
+      </section>
+
+      <!-- Feature table -->
+      <section class="feature-section">
+        <div class="section-title">
+          <h2>BenchForge Feature Plan</h2>
+
+          <p>Planned features and their current priority.</p>
+        </div>
+
+        <div class="feature-table">
+          <!-- Table header -->
+          <div class="feature-row feature-header">
+            <div>Page</div>
+            <div>Element</div>
+            <div>Type</div>
+            <div>Action / Purpose</div>
+            <div>Priority</div>
+          </div>
+
+          <!-- HOMEEEEE -->
+          <div class="feature-row">
+            <div>Home</div>
+            <div>Start Benchmark</div>
+            <div>Button</div>
+            <div>Opens benchmark setup</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Home</div>
+            <div>View Leaderboard</div>
+            <div>Button</div>
+            <div>Opens leaderboard</div>
+            <div>
+              <span class="priority later">🟡 Later</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Home</div>
+            <div>About</div>
+            <div>Link</div>
+            <div>Explains BenchForge</div>
+            <div>
+              <span class="priority nice">🟢 Nice</span>
+            </div>
+          </div>
+
+          <!-- BENCHMARK SETUP -->
+          <div class="feature-row">
+            <div>Benchmark Setup</div>
+            <div>CPU</div>
+            <div>Checkbox</div>
+            <div>Enable/disable CPU test</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Benchmark Setup</div>
+            <div>Memory</div>
+            <div>Checkbox</div>
+            <div>Enable/disable memory test</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Benchmark Setup</div>
+            <div>GPU</div>
+            <div>Checkbox</div>
+            <div>Enable/disable GPU test</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Benchmark Setup</div>
+            <div>Browser</div>
+            <div>Checkbox</div>
+            <div>Enable/disable browser test</div>
+            <div>
+              <span class="priority later">🟡 Later</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Benchmark Setup</div>
+            <div>Select All</div>
+            <div>Button</div>
+            <div>Enables all tests</div>
+            <div>
+              <span class="priority nice">🟢 Nice</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Benchmark Setup</div>
+            <div>Start Benchmark</div>
+            <div>Button</div>
+            <div>Starts benchmark</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Benchmark Setup</div>
+            <div>Back</div>
+            <div>Button</div>
+            <div>Returns home</div>
+            <div>
+              <span class="priority nice">🟢 Nice</span>
+            </div>
+          </div>
+
+          <!-- BENCHMARK RUNNING -->
+          <div class="feature-row">
+            <div>Benchmark Running</div>
+            <div>Progress Bar</div>
+            <div>Progress</div>
+            <div>Shows benchmark progress</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Benchmark Running</div>
+            <div>Current Test</div>
+            <div>Status</div>
+            <div>Shows active test</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Benchmark Running</div>
+            <div>Test Status</div>
+            <div>Status</div>
+            <div>Shows running/completed/failed</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Benchmark Running</div>
+            <div>Cancel</div>
+            <div>Button</div>
+            <div>Stops benchmark</div>
+            <div>
+              <span class="priority later">🟡 Later</span>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div class="feature-row">
+            <div>Results</div>
+            <div>Overall Score</div>
+            <div>Display</div>
+            <div>Shows combined score</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Results</div>
+            <div>CPU Score</div>
+            <div>Display</div>
+            <div>Shows CPU score</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Results</div>
+            <div>Memory Score</div>
+            <div>Display</div>
+            <div>Shows memory score</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Results</div>
+            <div>GPU Score</div>
+            <div>Display</div>
+            <div>Shows GPU score</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Results</div>
+            <div>Browser Score</div>
+            <div>Display</div>
+            <div>Shows browser score</div>
+            <div>
+              <span class="priority later">🟡 Later</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Results</div>
+            <div>Run Again</div>
+            <div>Button</div>
+            <div>Runs benchmark again</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Results</div>
+            <div>Share Result</div>
+            <div>Button</div>
+            <div>Creates/copies result link</div>
+            <div>
+              <span class="priority must">🔴 Must</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Results</div>
+            <div>View Leaderboard</div>
+            <div>Button</div>
+            <div>Opens leaderboard</div>
+            <div>
+              <span class="priority later">🟡 Later</span>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div>Results</div>
+            <div>Back Home</div>
+            <div>Button</div>
+            <div>Returns home</div>
+            <div>
+              <span class="priority nice">🟢 Nice</span>
+            </div>
+          </div>
+
+          <!-- Leaderboard -->
+          <div class="feature-row">
+            <div>Leaderboard</div>
+            <div>Overall</div>
+            <div>Tab</div>
+            <div>Sort by overall score</div>
+            <div>
+              <span class="priority later">🟡 Later</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEGEND -->
+      <section class="priority-legend">
+        <h2>Priority</h2>
+
+        <div class="legend-items">
+          <div>
+            <span class="priority must">🔴 Must</span>
+            <p>Required for the main BenchForge experience.</p>
+          </div>
+
+          <div>
+            <span class="priority later">🟡 Later</span>
+            <p>Planned feature for a future update.</p>
+          </div>
+
+          <div>
+            <span class="priority nice">🟢 Nice</span>
+            <p>Useful addition, but not essential.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2026 Thunder • BenchForge</p>
+      </footer>
+    </main>
   </body>
 </html>
+```
