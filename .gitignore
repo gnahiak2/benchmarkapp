@@ -1,0 +1,83 @@
+# ==============================
+# OS / Editor
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ==============================
+# Node / TypeScript
+# ==============================
+
+node_modules/
+.npm/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+out/
+.cache/
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage
+coverage/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Rust
+# ==============================
+
+target/
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==============================
+# Test / Benchmark output
+# ==============================
+
+test-results/
+benchmark-results/
+*.bench.json
+
+# ==============================
+# Temporary files
+# ==============================
+
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ==============================
+# Local database
+# ==============================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# ==============================
+# Generated files
+# ==============================
+
+generated/
