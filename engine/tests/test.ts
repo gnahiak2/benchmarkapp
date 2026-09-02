@@ -1,6 +1,13 @@
 // engine/tests/test.ts
-import { runBenchmark } from "../src";
+import { BenchmarkRunner } from "../src/runner";
+import { cpuBenchmark } from "../src/benchmarks/cpu";
 
-const results = runBenchmark();
+const runner = new BenchmarkRunner({
+  iterations: 5_000_000,
+  warmupRuns: 1,
+  sampleCount: 5
+});
 
-console.log(results);
+const result = await runner.run(cpuBenchmark);
+
+console.log(result);

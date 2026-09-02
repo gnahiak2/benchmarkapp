@@ -1,0 +1,32 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0-only",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "detect-libc": "^2.1.2",
+    "fdir": "^6.5.0",
+    "lightningcss": "^1.33.0",
+    "lightningcss-darwin-arm64": "^1.33.0",
+    "nanoid": "^3.3.18",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.7",
+    "postcss": "^8.5.26",
+    "rolldown": "^1.2.6",
+    "source-map-js": "^1.2.1",
+    "tinyglobby": "^0.2.17"
+  }
+}

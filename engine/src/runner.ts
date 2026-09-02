@@ -1,9 +1,16 @@
 // engine/src/runner.ts
-import { runCpuBenchmark } from "./benchmarks/cpu";
-import type { BenchmarkResult } from "./types";
+import type {
+  Benchmark,
+  BenchmarkConfig,
+  BenchmarkResult
+} from "./types";
 
-export function runBenchmark(): BenchmarkResult[] {
-  return [
-    runCpuBenchmark(),
-  ];
+export class BenchmarkRunner {
+    constructor(
+        private readonly config: BenchmarkConfig,
+    ) {}
+
+    async run(benchmark: Benchmark): Promise<BenchmarkResult> {
+        return benchmark.run(this.config);
+    }
 }
