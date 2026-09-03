@@ -19,6 +19,5 @@ export interface BenchmarkResult {
 export interface Benchmark {
   name: string;
   version: string;
-
   run(config: BenchmarkConfig): Promise<BenchmarkResult>;
 }
