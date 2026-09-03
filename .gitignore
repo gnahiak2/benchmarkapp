@@ -1,120 +1,71 @@
-# ==========================================
 # OS
-# ==========================================
-
 .DS_Store
 .DS_Store?
-._*
-.Spotlight-V100
-.Trashes
 Thumbs.db
 
-
-# ==========================================
-# Editors
-# ==========================================
-
+# Editors / IDEs
 .vscode/
 .idea/
+.zed/
+
 *.swp
 *.swo
-*.swn
+*~
 
+# Node / pnpm
+**/node_modules/
 
-# ==========================================
-# Node / npm / Vite
-# ==========================================
-
-node_modules/
-.npm/
 .pnpm-store/
-.yarn/
-.yarn-cache/
 
-dist/
-build/
-out/
-
-.vite/
-.cache/
-.parcel-cache/
+pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
 
 *.tsbuildinfo
 
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
+# Vite / Frontend builds
+**/dist/
+**/build/
+**/out/
 
+.vite/
+.cache/
 
-# ==========================================
-# Environment / Secrets
-# ==========================================
-
+# Environment / secrets
 .env
 .env.*
 !.env.example
 
-
-# ==========================================
 # Rust / Cargo
-# ==========================================
+**/target/
 
-target/
+*.rs.bk
 
-# Cargo backup files
-Cargo.lock.tmp
-Cargo.toml.tmp
-
-# Rust analyzer
-rust-project.json
-
-
-# ==========================================
 # Tauri
-# ==========================================
-
-src-tauri/target/
 src-tauri/gen/schemas/
 
-# Tauri generated bundles/installers
-src-tauri/target/release/bundle/
-
-
-# ==========================================
-# BenchForge
-# ==========================================
-
-benchmark-results/
-test-results/
+# Testing / Coverage
 coverage/
+**/coverage/
+
+test-results/
+benchmark-results/
 
 *.bench.json
 *.benchmark.json
 
-tmp/
-temp/
-*.tmp
-
-
-# ==========================================
-# Local databases
-# ==========================================
-
-*.db
-*.sqlite
-*.sqlite3
-
-
-# ==========================================
 # Logs
-# ==========================================
-
 *.log
 logs/
 
+# Temporary files
+tmp/
+temp/
 
-# ==========================================
-# Generated files
-# ==========================================
+*.tmp
+*.temp
 
-generated/
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
