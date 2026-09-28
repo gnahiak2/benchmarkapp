@@ -1,5 +1,0 @@
-packages:
-  - "."
-  - "engine"
-allowBuilds:
-  esbuild: true

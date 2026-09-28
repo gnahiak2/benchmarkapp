@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(ls node_modules/@benchmarkapp 2>/dev/null; echo \"---\"; ls -la node_modules/@benchmarkapp/engine 2>/dev/null; echo \"--- engine esbuild browser/wasm ---\"; ls engine/node_modules/esbuild/ 2>/dev/null; echo \"--- root esbuild ---\"; ls node_modules/esbuild/ 2>/dev/null)",
+      "Shell(ls -la ~/.commandcode/ 2>/dev/null; echo \"--- plans ---\"; ls -la ~/.commandcode/plans/ 2>/dev/null; echo \"HOME=$HOME\")",
+      "Shell(pnpm:*)",
+      "Shell(for b in google-chrome google-chrome-stable chromium chromium-browser chrome; do which $b 2>/dev/null; done; echo \"--- node/npm ---\"; node -v; npm -v; echo \"--- global prefix ---\"; npm config get prefix 2>/dev/null; echo \"--- net ---\"; timeout 8 npm view agent-browser version 2>&1 | tail -2)",
+      "Shell(ESB=$(ls -d node_modules/.pnpm/esbuild@*/node_modules/esbuild/bin/esbuild | head -1); echo \"using $ESB\"; \"$ESB\" /tmp/commandcode-911/-config-hackclub-benchmarkapp/9364e15e-f722-4d7d-882d-b860ba3344b0/scratchpad/harness.ts --bundle --platform=node --format=esm --target=node20 --outfile=/tmp/commandcode-911/-config-hackclub-benchmarkapp/9364e15e-f722-4d7d-882d-b860ba3344b0/scratchpad/harness.mjs && echo BUNDLED)",
+      "Shell(node /tmp/commandcode-911/-config-hackclub-benchmarkapp/9364e15e-f722-4d7d-882d-b860ba3344b0/scratchpad/harness.mjs)",
+      "Shell(/.local/bin/agent-browser:*)",
+      "Shell(export:*)",
+      "Shell(command:*)",
+      "Shell(apt-get:*)",
+      "Shell(test:*)",
+      "Shell(npx -y @puppeteer/browsers install chrome-headless-shell@stable --path /browsers 2 >& 1)",
+      "Shell(ldd:*)",
+      "Shell(find:*)",
+      "Shell(apt-cache:*)",
+      "Shell(grep:*)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
